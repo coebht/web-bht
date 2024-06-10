@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cara Burning IC Attiny 13A Arduino IDE</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/hamada.jpeg" rel="icon">
+  <link href="img/hamada.jpeg" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">BLOG</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="intro-title mb-4">Cara Burning IC Attiny 13A dengan Arduino IDE</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+              <img src="img/post-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="post-meta">
+              <h1 class="article-title">Cara Burning IC Attiny 13A dengan Arduino IDE</h1>
+              <ul>
+                <li>
+                  <span class="ion-ios-person"></span>
+                  <a href="#">Suto Setiyadi</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">C++</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">Mikrokontroller</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">Control</a>
+                </li>
+                <li>
+                  <span class="ion-ios-clock-outline"></span>
+                  <a href="#">18 Okt. 2020</a>
+                </li>
+              </ul>
+            </div>
+            <div class="article-content"  align="justify">
+              <p>
+                ATtiny13 berguna untuk proyek kecil yang tidak memerlukan mikrokontroller dengan memori yang besar dan ATtiny13 juga memiliki 
+                harga yg jauh lebih murah dari pada keluaran ATMEL yang lain. Masalah utama penggunaan ATtiny13 adalah tutorial yang sangat 
+                ketinggalan jaman dan kurangnya informasi, dibutuhkan waktu yang lebih baik dalam sehari untuk mengetahui bagaimana memprogramnya 
+                dengan Arduino IDE. Untuk memperbaiki kekurangan informasi ini, saya akan menunjukkan kepada Anda bagaimana memprogram ATtiny13 
+                atau ATtiny13a Anda dengan Arduino IDE. Berikut adalah cara memprogram ATtiny13:
+              </p>
+              <p>
+                1. Add Library Board:
+                <p> Dengan cara pilih File kemudia ambil Preferences. Seperti gambar berikut:</p>
+                <p><img src="img/artikel_1/img_1.jpg"></p>
+                <p>Kemudian tambahkan link berikut: <a href="https://github.com/SutoSS/Burning-IC-Attiny-13A/blob/main/README.md" title="Go to GitHub section">Visit GitHub</a></p>
+                <p>Seperti pada gambar berikut:</p>
+                <p><img src="img/artikel_1/img_2.jpg"></p>
+                <p>Kemudian klik OK.</p>
+              </p>
+              <p>
+                2. Install Board Attiny 13A
+                <p>Pertama adalah pilih menu Tools, kemudian pilih Board, dan kemudian pilih Board Manager.</p>
+                <p><img src="img/artikel_1/img_3.jpg"></p>
+                <p>Setelah itu pilih board manager ketik DIY dan kemudian pilih DIY ATtiny.</p>
+                <p><img src="img/artikel_1/img_4.jpg"></p>
+              </p>
+              <p>
+                3. Memulai Pemrograman
+                <p>Pertama memilih menu File, keumdianpilih Examples, dan kemudian ArduinoISP.</p>
+                <p><img src="img/artikel_1/img_5.jpg"></p>
+                <p>Setelah program ArduinoISP muncul, set Board sebagai berikut:</p>
+                <p><img src="img/artikel_1/img_6.jpg"></p>
+                <p>Catatan: sesuaikan dengan gambar yaa dan jangan lupa set Programmer pada Arduino as ISP. Memilih Port Arduino Uno yg aktif, lalu klik Burning Bootloader untuk membakar kode program ISP.</p>
+                <p><img src="img/artikel_1/img_7.jpg"></p>
+                <p>Catatan: Pilih port yang aktif. Disini port yang aktif adalah COM5.</p>
+              </p>
+              <p>
+                4. Rangkaian Uploader Attiny 13A dengan Arduino Uno
+                <p>Rangkailah rangkaian berikut ini:</p>
+                <p><img src="img/artikel_1/img_8.jpg"></p>
+              </p>
+              <p>
+                5. Program Attiny 13A dengan LED dan Push Button
+                <p>Buatlah program seperti berikut ini:</p> 
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    #define OK 1 //pin push button Up pada attiny
+                  </p>
+                  <p class="mb-0">
+                    #define relay 4 //pin relay pada attiny
+                  </p>
+                  <p class="mb-0">
+                    #define led 0 //pin led pada attiny
+                  </p>
+                  <p class="mb-0">
+                    int a = 0;
+                  </p>
+                  <p class="mb-0">
+                    void setup()
+                  </p>
+                  <p class="mb-0">
+                    {
+                  </p>
+                  <p class="mb-0">
+                     pinMode(OK, INPUT_PULLUP);
+                  </p>
+                  <p class="mb-0">
+                    pinMode(relay, OUTPUT);
+                  </p>
+                  <p class="mb-0">
+                    pinMode(led, OUTPUT);
+                  </p>
+                  <p class="mb-0">
+                    }
+                  </p>
+                  <p class="mb-0">
+                    void loop()
+                  </p>
+                  <p class="mb-0">
+                    {
+                  </p>
+                  <p class="mb-0">
+                    if(digitalRead(OK) == LOW && a==0)
+                  </p>
+                  <p class="mb-0">
+                    {
+                  </p>
+                  <p class="mb-0">
+                    delay(50);
+                  </p>
+                  <p class="mb-0">
+                    while(digitalRead(OK) == LOW){}
+                  </p>
+                  <p class="mb-0">
+                    digitalWrite(relay, HIGH);
+                  </p>
+                  <p class="mb-0">
+                    digitalWrite(led, HIGH);
+                  </p>
+                  <p class="mb-0">
+                    a=1;
+                  </p>
+                  <p class="mb-0">
+                   }
+                  </p>
+                  <p class="mb-0">
+                    else if(digitalRead(OK) == LOW && a ==1)
+                  </p>
+                  <p class="mb-0">
+                    {
+                  </p>
+                  <p class="mb-0">
+                    delay(50);
+                  </p>
+                  <p class="mb-0">
+                    while(digitalRead(OK) == LOW){}
+                  </p>
+                  <p class="mb-0">
+                    digitalWrite(relay, LOW);
+                  </p>
+                  <p class="mb-0">
+                    digitalWrite(led, LOW);
+                  </p>
+                  <p class="mb-0">
+                    a=0;
+                  </p>
+                  <p class="mb-0">
+                    }
+                  </p>
+                  <p class="mb-0">
+                   }
+                  </p>
+                </blockquote>
+             </p>
+              <p>
+                Program diatas adalah penggunaan Attiny 13A sebagai pengontrol LED yang dapat dinyalakan dengan Push Button.
+              </p>
+              <p>
+                6. Upload Program
+                <p> Upload program dengan memilih ikon upload seperti pada gambar seperti berikut:</p>
+                <p><img src="img/artikel_1/img_9.JPG"></p>
+                <p> Tunggu proses upload selesai hingga keterangan Done Upload muncul</p>
+              </p>
+              <p>
+                7. Rangkian Attiny 13A dengan LED dan Push Button
+                <P>Rangkailah rangkaian berikut:</P>
+                <p><img src="img/artikel_1/img_10.jpg"></p>
+                <p>Hidupkan power arduino dan Attiny 13A sudah bisa digunakan. Catatan: Rangkaian diatas ATtiny 13A hanya mengambil power dari Arduino Uno.</p>
+                <p>Have Fun!!!</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Recent Post</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="artikel_2.html">Rekontruksi 3D Dengan Photogrammetry 3DF-Zepyhr</a>
+                </li>
+                <li>
+                  <a href="https://www.researchgate.net/publication/354392592_A_Comparative_Study_of_Affordable_Photogrammetry_Software_for_Reconstructing_3D_Model_of_a_Human_Foot">
+                    A Comparative Study of Affordable Photogrammetry Software for Reconstructing 3D Model of a Human Foot</a>
+                </li>
+                <li>
+                  <a href="https://ejurnal.itenas.ac.id/index.php/elkomika/article/view/6505">
+                    E-Growth Monitoring System (EGMS) sebagai Upaya Penurunan Prevalensi Stunting</a>
+                </li>
+                <li>
+                  <a href="https://www.researchgate.net/publication/367209190_Human_Activity_Detection_Employing_Full-Type_2D_Blazepose_Estimation_with_LSTM">
+                    Human Activity Detection Employing Full-Type 2D Blazepose Estimation with LSTM</a>
+                </li>
+                <li>
+                  <a href="https://journal.unhas.ac.id/index.php/panritaabdi/article/view/19312">
+                    Implementasi Alat Pemantauan Aktivitas dan Pelacakan Lokasi Jatuh (E-CARE) Untuk Lansia di Daerah Cikutra Kota Bandung</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget-sidebar widget-tags">
+            <h5 class="sidebar-title">Tags</h5>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="#">C++</a>
+                </li>
+                <li>
+                  <a href="#">Mikrokontroller</a>
+                </li>
+                <li>
+                  <a href="#">Control</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
